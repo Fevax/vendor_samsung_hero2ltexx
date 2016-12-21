@@ -51,7 +51,9 @@ PRODUCT_COPY_FILES += \
   vendor/samsung/hero2ltexx/proprietary/app/mcRegistry/fffffffff0000000000000000000001b.tlbin:system/app/mcRegistry/fffffffff0000000000000000000001b.tlbin \
   vendor/samsung/hero2ltexx/proprietary/app/mcRegistry/fffffffff0000000000000000000001e.tlbin:system/app/mcRegistry/fffffffff0000000000000000000001e.tlbin \
   vendor/samsung/hero2ltexx/proprietary/bin/cs:system/bin/cs \
+  vendor/samsung/hero2ltexx/proprietary/bin/mcDriverDaemon:system/bin/mcDriverDaemon \
   vendor/samsung/hero2ltexx/proprietary/lib/libMcClient.so:system/lib/libMcClient.so \
+  vendor/samsung/hero2ltexx/proprietary/lib64/libMcClient.so:system/lib64/libMcClient.so \
   vendor/samsung/hero2ltexx/proprietary/bin/cbd:system/bin/cbd \
   vendor/samsung/hero2ltexx/proprietary/bin/rild:system/bin/rild \
   vendor/samsung/hero2ltexx/proprietary/lib/libreference-ril.so:system/lib/libreference-ril.so \
@@ -60,12 +62,14 @@ PRODUCT_COPY_FILES += \
   vendor/samsung/hero2ltexx/proprietary/lib/libsecnativefeature.so:system/lib/libsecnativefeature.so \
   vendor/samsung/hero2ltexx/proprietary/lib/libsecril-client.so:system/lib/libsecril-client.so \
   vendor/samsung/hero2ltexx/proprietary/lib/libxml2.so:system/lib/libxml2.so \
+  vendor/samsung/hero2ltexx/proprietary/lib/libprotobuf-cpp-full.so:system/lib/libprotobuf-cpp-full.so \
   vendor/samsung/hero2ltexx/proprietary/lib64/libreference-ril.so:system/lib64/libreference-ril.so \
   vendor/samsung/hero2ltexx/proprietary/lib64/libril.so:system/lib64/libril.so \
   vendor/samsung/hero2ltexx/proprietary/lib64/libsec-ril.so:system/lib64/libsec-ril.so \
   vendor/samsung/hero2ltexx/proprietary/lib64/libsecnativefeature.so:system/lib64/libsecnativefeature.so \
   vendor/samsung/hero2ltexx/proprietary/lib64/libsecril-client.so:system/lib64/libsecril-client.so \
   vendor/samsung/hero2ltexx/proprietary/lib64/libxml2.so:system/lib64/libxml2.so \
+  vendor/samsung/hero2ltexx/proprietary/lib64/libprotobuf-cpp-full.so:system/lib64/libprotobuf-cpp-full.so \
   vendor/samsung/hero2ltexx/proprietary/etc/firmware/clearwaterc-dsp2-tx-nb.wmfw:system/etc/firmware/clearwaterc-dsp2-tx-nb.wmfw \
   vendor/samsung/hero2ltexx/proprietary/etc/firmware/clearwaterc-dsp2-tx-swb.wmfw:system/etc/firmware/clearwaterc-dsp2-tx-swb.wmfw \
   vendor/samsung/hero2ltexx/proprietary/etc/firmware/clearwaterc-dsp2-tx-wb.wmfw:system/etc/firmware/clearwaterc-dsp2-tx-wb.wmfw \
@@ -116,6 +120,10 @@ PRODUCT_COPY_FILES += \
   vendor/samsung/hero2ltexx/proprietary/vendor/firmware/setfile_2l1.bin:system/vendor/firmware/setfile_2l1.bin \
   vendor/samsung/hero2ltexx/proprietary/vendor/firmware/setfile_4e6.bin:system/vendor/firmware/setfile_4e6.bin \
   vendor/samsung/hero2ltexx/proprietary/vendor/firmware/setfile_imx260.bin:system/vendor/firmware/setfile_imx260.bin \
+  vendor/samsung/hero2ltexx/proprietary/lib/hw/camera.exynos5.so:system/lib/hw/camera.exynos5.so \
+  vendor/samsung/hero2ltexx/proprietary/lib64/hw/camera.exynos5.so:system/lib64/hw/camera.exynos5.so \
+  vendor/samsung/hero2ltexx/proprietary/lib/hw/camera.universal8890.so:system/lib/hw/camera.universal8890.so \
+  vendor/samsung/hero2ltexx/proprietary/lib64/hw/camera.universal8890.so:system/lib64/hw/camera.universal8890.so \
   vendor/samsung/hero2ltexx/proprietary/lib/libexynoscamera3.so:system/lib/libexynoscamera3.so \
   vendor/samsung/hero2ltexx/proprietary/lib64/libexynoscamera3.so:system/lib64/libexynoscamera3.so \
   vendor/samsung/hero2ltexx/proprietary/lib/libexynoscamera.so:system/lib/libexynoscamera.so \
@@ -128,6 +136,25 @@ PRODUCT_COPY_FILES += \
   vendor/samsung/hero2ltexx/proprietary/lib64/libuniapi.so:system/lib64/libuniapi.so \
   vendor/samsung/hero2ltexx/proprietary/lib/libuniplugin.so:system/lib/libuniplugin.so \
   vendor/samsung/hero2ltexx/proprietary/lib64/libuniplugin.so:system/lib64/libuniplugin.so \
+  vendor/samsung/hero2ltexx/proprietary/lib/libhwjpeg.so:system/lib/libhwjpeg.so \
+  vendor/samsung/hero2ltexx/proprietary/lib64/libhwjpeg.so:system/lib64/libhwjpeg.so \
+  vendor/samsung/hero2ltexx/proprietary/lib/libldc_core.so:system/lib/libldc_core.so \
+  vendor/samsung/hero2ltexx/proprietary/lib/libldc_interface.so:system/lib/libldc_interface.so \
+  vendor/samsung/hero2ltexx/proprietary/lib/libsomp.so:system/lib/libsomp.so \
+  vendor/samsung/hero2ltexx/proprietary/lib/libsmartfocusengine.so:system/lib/libsmartfocusengine.so \
+  vendor/samsung/hero2ltexx/proprietary/lib/libsmartfocus_interface.so:system/lib/libsmartfocus_interface.so \
+  vendor/samsung/hero2ltexx/proprietary/lib/libblurdetection.so:system/lib/libblurdetection.so \
+  vendor/samsung/hero2ltexx/proprietary/lib/libblurdetection_interface.so:system/lib/libblurdetection_interface.so \
+  vendor/samsung/hero2ltexx/proprietary/lib/libimage_flashed_lls.so:system/lib/libimage_flashed_lls.so \
+  vendor/samsung/hero2ltexx/proprietary/lib/libflashedlls_interface.so:system/lib/libflashedlls_interface.so \
+  vendor/samsung/hero2ltexx/proprietary/lib64/libldc_core.so:system/lib64/libldc_core.so \
+  vendor/samsung/hero2ltexx/proprietary/lib64/libsomp.so:system/lib64/libsomp.so \
+  vendor/samsung/hero2ltexx/proprietary/lib64/libsmartfocusengine.so:system/lib64/libsmartfocusengine.so \
+  vendor/samsung/hero2ltexx/proprietary/lib64/libsmartfocus_interface.so:system/lib64/libsmartfocus_interface.so \
+  vendor/samsung/hero2ltexx/proprietary/lib64/libblurdetection.so:system/lib64/libblurdetection.so \
+  vendor/samsung/hero2ltexx/proprietary/lib64/libblurdetection_interface.so:system/lib64/libblurdetection_interface.so \
+  vendor/samsung/hero2ltexx/proprietary/lib64/libimage_flashed_lls.so:system/lib64/libimage_flashed_lls.so \
+  vendor/samsung/hero2ltexx/proprietary/lib64/libflashedlls_interface.so:system/lib64/libflashedlls_interface.so \
   vendor/samsung/hero2ltexx/proprietary/vendor/lib/egl/libGLES_mali.so:system/vendor/lib/egl/libGLES_mali.so \
   vendor/samsung/hero2ltexx/proprietary/vendor/lib64/egl/libGLES_mali.so:system/vendor/lib64/egl/libGLES_mali.so \
   vendor/samsung/hero2ltexx/proprietary/bin/gps.cer:system/bin/gps.cer \
@@ -135,19 +162,43 @@ PRODUCT_COPY_FILES += \
   vendor/samsung/hero2ltexx/proprietary/lib64/hw/gps.universal8890.so:system/lib64/hw/gps.universal8890.so \
   vendor/samsung/hero2ltexx/proprietary/lib/libwrappergps.so:system/lib/libwrappergps.so \
   vendor/samsung/hero2ltexx/proprietary/lib64/libwrappergps.so:system/lib64/libwrappergps.so \
-  vendor/samsung/hero2ltexx/proprietary/lib/libion.so:system/lib/libion.so \
-  vendor/samsung/hero2ltexx/proprietary/lib64/libion.so:system/lib64/libion.so \
-  vendor/samsung/hero2ltexx/proprietary/lib/libion_exynos.so:system/lib/libion_exynos.so \
-  vendor/samsung/hero2ltexx/proprietary/lib64/libion_exynos.so:system/lib64/libion_exynos.so \
   vendor/samsung/hero2ltexx/proprietary/etc/sec_s3nrn81_rfreg.bin:system/etc/sec_s3nrn81_rfreg.bin \
   vendor/samsung/hero2ltexx/proprietary/lib/hw/nfc_nci.universal8890.so:system/lib/hw/nfc_nci.universal8890.so \
   vendor/samsung/hero2ltexx/proprietary/lib64/hw/nfc_nci.universal8890.so:system/lib64/hw/nfc_nci.universal8890.so \
   vendor/samsung/hero2ltexx/proprietary/vendor/firmware/sec_s3nrn81_firmware.bin:system/vendor/firmware/sec_s3nrn81_firmware.bin \
+  vendor/samsung/hero2ltexx/proprietary/lib64/libhr.so:system/lib64/libhr.so \
+  vendor/samsung/hero2ltexx/proprietary/etc/lhd.conf:system/etc/lhd.conf \
+  vendor/samsung/hero2ltexx/proprietary/bin/lhd:system/bin/lhd \
+  vendor/samsung/hero2ltexx/proprietary/bin/bcm_sensorhub_a1.patch:system/bin/bcm_sensorhub_a1.patch \
   vendor/samsung/hero2ltexx/proprietary/lib/hw/sensorhubs.universal8890.so:system/lib/hw/sensorhubs.universal8890.so \
   vendor/samsung/hero2ltexx/proprietary/lib/hw/sensors.universal8890.so:system/lib/hw/sensors.universal8890.so \
+  vendor/samsung/hero2ltexx/proprietary/lib/libsensorservice.so:system/lib/libsensorservice.so \
   vendor/samsung/hero2ltexx/proprietary/lib64/hw/sensorhubs.universal8890.so:system/lib64/hw/sensorhubs.universal8890.so \
   vendor/samsung/hero2ltexx/proprietary/lib64/hw/sensors.universal8890.so:system/lib64/hw/sensors.universal8890.so \
-  vendor/samsung/hero2ltexx/proprietary/vendor/lib/mediadrm/libwvdrmengine.so:system/vendor/lib/mediadrm/libwvdrmengine.so \
+  vendor/samsung/hero2ltexx/proprietary/lib64/libmaxflicker.so:system/lib64/libmaxflicker.so \
+  vendor/samsung/hero2ltexx/proprietary/lib64/libsensorservice.so:system/lib64/libsensorservice.so \
+  vendor/samsung/hero2ltexx/proprietary/lib64/omx/libOMX.Exynos.AVC.Decoder.so:system/lib64/omx/libOMX.Exynos.AVC.Decoder.so \
+  vendor/samsung/hero2ltexx/proprietary/lib64/omx/libOMX.Exynos.AVC.Encoder.so:system/lib64/omx/libOMX.Exynos.AVC.Encoder.so \
+  vendor/samsung/hero2ltexx/proprietary/lib64/omx/libOMX.Exynos.HEVC.Decoder.so:system/lib64/omx/libOMX.Exynos.HEVC.Decoder.so \
+  vendor/samsung/hero2ltexx/proprietary/lib64/omx/libOMX.Exynos.HEVC.Encoder.so:system/lib64/omx/libOMX.Exynos.HEVC.Encoder.so \
+  vendor/samsung/hero2ltexx/proprietary/lib64/omx/libOMX.Exynos.MPEG4.Decoder.so:system/lib64/omx/libOMX.Exynos.MPEG4.Decoder.so \
+  vendor/samsung/hero2ltexx/proprietary/lib64/omx/libOMX.Exynos.MPEG4.Encoder.so:system/lib64/omx/libOMX.Exynos.MPEG4.Encoder.so \
+  vendor/samsung/hero2ltexx/proprietary/lib64/omx/libOMX.Exynos.VP8.Decoder.so:system/lib64/omx/libOMX.Exynos.VP8.Decoder.so \
+  vendor/samsung/hero2ltexx/proprietary/lib64/omx/libOMX.Exynos.VP8.Encoder.so:system/lib64/omx/libOMX.Exynos.VP8.Encoder.so \
+  vendor/samsung/hero2ltexx/proprietary/lib64/omx/libOMX.Exynos.VP9.Decoder.so:system/lib64/omx/libOMX.Exynos.VP9.Decoder.so \
+  vendor/samsung/hero2ltexx/proprietary/lib64/omx/libOMX.Exynos.VP9.Encoder.so:system/lib64/omx/libOMX.Exynos.VP9.Encoder.so \
+  vendor/samsung/hero2ltexx/proprietary/lib64/omx/libOMX.Exynos.WMV.Decoder.so:system/lib64/omx/libOMX.Exynos.WMV.Decoder.so \
+  vendor/samsung/hero2ltexx/proprietary/lib/omx/libOMX.Exynos.AVC.Decoder.so:system/lib/omx/libOMX.Exynos.AVC.Decoder.so \
+  vendor/samsung/hero2ltexx/proprietary/lib/omx/libOMX.Exynos.AVC.Encoder.so:system/lib/omx/libOMX.Exynos.AVC.Encoder.so \
+  vendor/samsung/hero2ltexx/proprietary/lib/omx/libOMX.Exynos.HEVC.Decoder.so:system/lib/omx/libOMX.Exynos.HEVC.Decoder.so \
+  vendor/samsung/hero2ltexx/proprietary/lib/omx/libOMX.Exynos.HEVC.Encoder.so:system/lib/omx/libOMX.Exynos.HEVC.Encoder.so \
+  vendor/samsung/hero2ltexx/proprietary/lib/omx/libOMX.Exynos.MPEG4.Decoder.so:system/lib/omx/libOMX.Exynos.MPEG4.Decoder.so \
+  vendor/samsung/hero2ltexx/proprietary/lib/omx/libOMX.Exynos.MPEG4.Encoder.so:system/lib/omx/libOMX.Exynos.MPEG4.Encoder.so \
+  vendor/samsung/hero2ltexx/proprietary/lib/omx/libOMX.Exynos.VP8.Decoder.so:system/lib/omx/libOMX.Exynos.VP8.Decoder.so \
+  vendor/samsung/hero2ltexx/proprietary/lib/omx/libOMX.Exynos.VP8.Encoder.so:system/lib/omx/libOMX.Exynos.VP8.Encoder.so \
+  vendor/samsung/hero2ltexx/proprietary/lib/omx/libOMX.Exynos.VP9.Decoder.so:system/lib/omx/libOMX.Exynos.VP9.Decoder.so \
+  vendor/samsung/hero2ltexx/proprietary/lib/omx/libOMX.Exynos.VP9.Encoder.so:system/lib/omx/libOMX.Exynos.VP9.Encoder.so \
+  vendor/samsung/hero2ltexx/proprietary/lib/omx/libOMX.Exynos.WMV.Decoder.so:system/lib/omx/libOMX.Exynos.WMV.Decoder.so \
   vendor/samsung/hero2ltexx/proprietary/etc/wifi/bcmdhd_apsta.bin_b1:system/etc/wifi/bcmdhd_apsta.bin_b1 \
   vendor/samsung/hero2ltexx/proprietary/etc/wifi/bcmdhd_apsta.bin_b90s_b1:system/etc/wifi/bcmdhd_apsta.bin_b90s_b1 \
   vendor/samsung/hero2ltexx/proprietary/etc/wifi/bcmdhd_apsta.bin_c0:system/etc/wifi/bcmdhd_apsta.bin_c0 \
